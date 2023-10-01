@@ -13,7 +13,7 @@ export const FriendListStyle = styled.ul`
     gap: 20px;
     font-size: 20px;
 
-    .item{
+    .friend-list-item{
     min-width: 300px;
     height: auto;
     border: 3px solid #1c153d;

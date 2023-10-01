@@ -3,9 +3,9 @@ import {FriendListStyle, online, offline} from './FriendList.styled';
 
 
 export const FriendList = ({friends}) => (
-    <FriendListStyle>
+    <FriendListStyle className='friend-list'>
         {friends.map(({id, name, isOnline, avatar}) => (
-        <li key={id} className="item">
+        <li key={id} className="friend-list-item">
             <span className={`status ${isOnline ? online : offline}`}></span>
             <img className="avatar" src={avatar} alt="User avatar" width="48" />
             <p className="name">{name}</p>
